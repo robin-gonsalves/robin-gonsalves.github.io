@@ -7,6 +7,12 @@ body {
   background: #f1f78e;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+  }
+}
+
 p {
   line-height: 150%;
 }
@@ -48,9 +54,8 @@ nav, .menu-icon {
   font-size: 30px;
 }
 
-
 .gutters {
-  margin: 0 20px;
+  margin: 0 50px;
 }
 
 .menu {
