@@ -5,108 +5,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin-top: 40px;
-      max-width: 500px;
-      margin: 0 auto;
-      color: rgb(246, 181, 248);
-      font-family: "Jost", sans-serif;
-      background: #9e8ef7;
-    }
 
-    p {
-      line-height: 150%;
-    }
-
-    #content {
-      min-height: 100vh;
-      background: white;
-      color: rgb(0, 0, 0);
-    }
-
-    h1 {
-      text-align: center;
-      margin: 50px 0;
-    }
-
-    img {
-      height: 300px;
-      width: 300px;
-      display: block;
-      margin: 20px auto;
-    }
-
-    .nav {
-      display: flex;
-      gap: 25px;
-      -ms-scroll-limit-x-max: center;
-      background: #720992;
-      color: black;
-      align-items: center;
-      padding: 10px;
-      text-transform: capitalize;
-    }
-
-    .navItem.bg {
-      font-size: 40px;
-    }
-
-    .navItem {
-      font-size: 30px;
-    }
-
-    .navItem:hover .navSubItems {
-      display: block;
-    }
-
-    .gutters {
-      margin: 0 20px;
-    }
-
-    .navSubItems {
-      display: none;
-      position: absolute;
-      background: rgb(98, 5, 144);
-      margin-left: -30px;
-      font-size: 20px;
-      padding-top: 10px;
-    }
-
-    .navSubItems a {
-      display: block;
-      padding: 10px 30px;
-      color: rgb(145, 150, 250);
-    }
-
-    .navSubItems a:hover {
-      background: white;
-    }
-  </style>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div id="content">
     <div class="nav">
-      <div class="navItem bg">
+      <nav class=bg>
         <a href="./index.html">🏠</a>
-      </div>
-      <div class="navItem">
-        Activities
+      </nav>
+      <label for="menu-btn" class="menu-icon"><span class="navicon">Activities</span></label>
+      <input type="checkbox" id="menu-btn" class="menu-btn" aria-controls="navigation-menu" aria-label="Toggle navigation menu"/>
 
-        <div class="navSubItems">
-          <a href="advent.html">
-            <div>Advent Windows🪟</div>
-          </a>
-          <a href="party.html">
-            <div>Steet Party 🎉</div>
-          </a>
-          <a href="painting.html">
-            <div>Street painting🎨</div>
-          </a>
-
-        </div>
-      </div>
+      <nav class="menu"><ul></ul></nav>
     </div>
 
     <div class="gutters">

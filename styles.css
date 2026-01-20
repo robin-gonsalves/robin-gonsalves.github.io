@@ -1,0 +1,104 @@
+body {
+  margin-top: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: rgb(246, 181, 248);
+  font-family: "Jost", sans-serif;
+  background: #f1f78e;
+}
+
+p {
+  line-height: 150%;
+}
+
+#content {
+  min-height: 100vh;
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  -ms-scroll-limit-x-max: center;
+  background: #f3aff1;
+  color: black;
+  align-items: center;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+nav.bg {
+  font-size: 40px;
+}
+
+nav, .menu-icon {
+  font-size: 30px;
+}
+
+
+.gutters {
+  margin: 0 20px;
+}
+
+.menu {
+  position: absolute;
+  background: rgb(245, 174, 247);
+  font-size: 20px;
+  top: 60px;
+  margin-left: 30px;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  padding: 10px 30px;
+  color:rgb(250, 239, 145);
+  display: block;
+}
+
+nav a:hover {
+  background: white;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu-btn:checked ~ .menu, .menu-btn:hover ~ .menu {
+    max-height: 500px; /* A value large enough to show all content */
+}
+
+.menu:hover {
+  max-height: 300px;
+}
